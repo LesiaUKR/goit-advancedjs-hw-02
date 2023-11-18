@@ -5,36 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown timer</title>
     
-    <script type="module" crossorigin src="/vanilla-app-template/assets/modulepreload-polyfill-ec808ebb.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/common-8120aae2.css">
+    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-ec808ebb.js">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-651d7991.js">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-80d0dc0f.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/common-f73859de.css">
   </head>
   <body>
     <div class="go-back-wrap">
-      <a href="index.html">Go back</a>
+      <a class="go-back-link" href="index.html">Go back</a>
     </div>
+    <div class="timer-wrap">
+      <input type="text" id="datetime-picker" />
+      <button class="button timer start-btn" type="button" data-start>
+        Start
+      </button>
 
-    <input type="text" id="datetime-picker" />
-    <button type="button" data-start>Start</button>
-
-    <div class="timer">
-      <div class="field">
-        <span class="value" data-days>00</span>
-        <span class="label">Days</span>
-      </div>
-      <div class="field">
-        <span class="value" data-hours>00</span>
-        <span class="label">Hours</span>
-      </div>
-      <div class="field">
-        <span class="value" data-minutes>00</span>
-        <span class="label">Minutes</span>
-      </div>
-      <div class="field">
-        <span class="value" data-seconds>00</span>
-        <span class="label">Seconds</span>
+      <div class="timer">
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
       </div>
     </div>
-
     
   </body>
 </html>
