@@ -166,3 +166,46 @@ nav {
   background-color: #f44566;
   color: #fff;
 }
+
+.timer-wrap {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.timer.start-btn {
+  width: 150px;
+}
+
+.timer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.field {
+  color: #fff;
+  font-size: 20px;
+}
+
+.label {
+  font-size: 18px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+label {
+  color: #fff;
+}
