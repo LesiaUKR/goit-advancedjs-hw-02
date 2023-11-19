@@ -1,14 +1,10 @@
 const btnStart = document.querySelector('button[data-start]');
-console.dir(btnStart);
-
 const btnStop = document.querySelector('button[data-stop]');
-console.log(btnStart);
-
 const bodyColor = document.getElementsByTagName('body')[0];
-console.dir(bodyColor);
 
 btnStart.addEventListener('click', startColorChange);
 btnStop.addEventListener('click', stopColorChange);
+btnStop.disabled = true;
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
